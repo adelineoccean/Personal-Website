@@ -1,0 +1,157 @@
+/* 
+   Personal Website Style Sheet
+   Filename: styles.css
+
+   Author: Adeline Occean  
+   Date: 04/28/2024    
+ */
+
+ @import url('"https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"');
+
+/* reset styles */
+html {
+   font-size: 16px;
+}
+article, body, div, nav, footer, header, h1, h2, p {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/* global styles */
+p {
+   margin: 0.4em 0;
+   font-size: 1.2em;
+}
+
+/* body and page container */
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url(./img/cover8.jpg);
+   background-size: cover;
+   font-family: Lato, Arial, Helvetica, sans-serif;
+   /*background-color: rgb(244, 244, 239);*/
+}
+
+/* header section */
+header {
+   padding: 50px;
+   background-color: rgb(233, 231, 231);
+   text-align: center;
+}
+h1 {
+   font-size: 40px; 
+   font-weight: 600; 
+   font-style: italic;
+   min-width: 280px;
+}
+/*Creating a style rule to change the header greeting in different languages */
+header span::before {
+   content: "Hello!";
+   color: #090909;
+   animation: words 10s infinite;
+}
+header span::after {
+   content: "";
+   position: absolute;
+   width: 0;
+   border-left: 2px solid black;
+   right: -8px;
+}
+@keyframes words {
+   0%,20%{
+      content: "Hello!";
+   }
+   21%,40%{
+      content: "Hola!";
+   }
+   41%,60%{
+      content: "Aloha!";
+   }
+   61%,80%{
+      content: "Bonjour!";
+   }
+   81%,100%{
+      content: "Ni Hao!";
+   }
+}
+.logo {
+   float: left;
+   padding: 0.2em;
+   border: 2px;
+   position: absolute;
+   top: 2em;
+   left: 2em;
+}
+
+/* styling top navigation bar */
+.sitenavigation {
+   border: 5px solid ivory;
+   padding: 5px;
+   overflow: hidden;
+   background-color: #f17cb8;
+}
+
+/* style the navigation bar links */
+.sitenavigation li {
+   display: inline-block;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+}
+.sitenavigation a:link {
+   text-decoration: none;
+   color: #1f191e;
+}
+.sitenavigation a:visited {
+   color: ivory;
+}
+.sitenavigation a:hover, .sitenavigation a:focus {
+   color: black;
+   background-color: #b0aaaa;
+}
+
+/* main content */
+.container {
+   width: 500px;
+   background-color: rgb(109, 65, 34);
+   border: 5px solid #f17cb8;
+   padding: 5px;
+   text-align: center;
+   margin: auto;
+   margin-top: 5%;
+   color: ivory;
+   position: relative;
+}
+.container-img {
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+}
+.container h2 {
+   text-align: center;
+   font-size: 25px;
+   letter-spacing: 4px;
+   font-weight: 100;
+}
+.container h3 {
+   font-size: 20px;
+   letter-spacing: 3px;
+   font-weight: 100;
+}
+.container p {
+   text-align: justify;
+}
+/* footer section */
+footer {
+   padding: 0.6em;
+   height: 5%;
+   width: 100%;
+   background-color: #9a796e;
+   text-align: center;
+   color: ivory;
+   position: fixed; 
+   bottom: 0px;
+}
+
