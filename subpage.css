@@ -1,0 +1,181 @@
+/* 
+   Personal Website Style Sheet
+   Filename: suboage.css
+
+   Author: Adeline Occean  
+   Date: 04/28/2024    
+ */
+
+
+/* reset styles */
+html {
+   font-size: 16px;
+}
+article, body, div, nav, footer, header, h1, h2, p {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/* global styles */
+p {
+   margin: 0.4em 0;
+   font-size: 1.2em;
+}
+
+/* body and page container */
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url(./img/cover8.jpg);
+   background-size: cover;
+   font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.logo {
+   float: left;
+   padding: 0.2em;
+   border: 2px;
+   position: absolute;
+   top: 2em;
+   left: 2em;
+}
+
+/* header section */
+header {
+   padding: 50px;
+   background-color: rgb(233, 231, 231);
+   text-align: center;
+   color: black;
+}
+header p { 
+   color: palevioletred;
+}
+h1 {
+   font-size: 40px; 
+   font-weight: bold;
+   font-style: italic;
+}
+
+/* styling top navigation bar */
+.sitenavigation {
+   border: 5px solid ivory;
+   padding: 5px;
+   overflow: hidden;
+   background-color: #f17cb8;
+}
+
+/* style the navigation bar links */
+.sitenavigation li {
+   display: inline-block;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+}
+.sitenavigation a:link {
+   text-decoration: none;
+   color: #1f191e;
+}
+
+.sitenavigation a:visited {
+   color: #f4e6e6;
+}
+.sitenavigation a:hover, .sitenavigation a:focus {
+   color: black;
+   background-color: #b0aaaa;
+}
+
+/* main content structured with container and boxes*/
+.container {
+   width: 500px;
+   background-color: rgb(109, 65, 34);
+   border: 5px solid #f17cb8;
+   padding: 5px;
+   margin: auto;
+   margin-top: 5%;
+   color: ivory;
+   position: relative;
+}
+.container p {
+   text-align: left;
+}
+.container-img {
+   padding: 5px;
+   float: left;
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+   margin: 20px 20px 30px 0;
+   border: 5px solid #fff;
+   shape-outside: circle();
+}
+.box {
+   margin: 20px 20px 30px 0;
+   border: 5px solid #f17cb8;
+   padding: 5px;
+   background-color: rgb(109, 65, 34);
+   width: 350px;
+   height: 300px;
+   display: inline-flex;
+   font-family: pacifico, cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size: medium;
+   color: ivory;
+}
+
+/*Image style rule*/
+.img {
+   margin: 20px 20px 30px 0;
+   border: 5px solid #fff;
+   padding: 5px;
+   border-radius: 50%;
+   width: 250px;
+   height: 250px;
+}
+
+/* Favicon style rules*/
+ul{
+   margin: 0;
+   padding: 0;
+}
+.container li {
+   display: inline-block;
+   margin: 6px;
+   list-style: none;
+}
+.container li a{
+   color: white;
+   font-size: 60px;
+}
+ 
+ /* Add a hover effect */
+ .container li a:hover {
+   opacity: 0.7;
+ }
+
+ /* article section */
+ .container-resume {
+   width: 500px;
+   background-color: rgb(109, 65, 34);
+   border: 5px solid #f17cb8;
+   padding: 5px;
+   margin: auto;
+   margin-top: 5%;
+   color: ivory;
+   position: relative;
+ }
+ .container-resume {
+   font-family: 'Times New Roman', Times, serif;
+ }
+
+/* footer section */
+footer {
+   padding: 0.6em;
+   height: 5%;
+   width: 100%;
+   background-color: #9a796e;
+   text-align: center;
+   color: ivory;
+   position:fixed; bottom: 0px;
+}
